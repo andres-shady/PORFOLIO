@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="page.css">
+  
+    
+
+</head>
+
+<body>
+<div id="app">
+
+    <header>
+   <div>
+    <h1>{{message}}</h1>
+    
+   </div>
+   
+   <a href="page.html"><img src=" acueil.png" alt="logo d'un accueil"> </a>
+        
+
+    </header>
+
+    <main>
+         <section>
+            
+            <h2>{{titre1}} </h2>
+            <p>Moi c'est MOURCHIDI Abdallah mais vous pouvez m'appellez <cite>andres</cite> <br>
+                Je viens juste de <cite>commencer</cite> le developpement web  <br>
+                Mais avant quand passe au chose serieuse laissez moi vous montrez ce que <cite>j'aime</cite> 
+             </p>
+             <img src="ballon.jpg" alt="photo d'un ballon">
+             <div> <h2> {{titre2}} </h2></div>
+        </section>
+
+        <section>
+           
+            <h3>{{introduction}} </h3>
+
+            <div> 
+                <a href="./PEOJET/projet.html"><img src="devellopeur.jpg" alt=" photo d'un homme en train de develloper"> </a>
+                
+                <h3>{{titreProjet1}} </h3>
+               
+            </div>
+            <div>
+                <a href="./PEOJET/projet2.html"><img  src="OIP.jpg" alt="photo d'un croquis"></a>
+                <h3>{{titreProjet2}} </h3>
+            </div>
+        </section>
+        <div>
+            <p> Envie de me contacter  </p>
+            <a id='contact' href="contact.html"> <button>envoyer votre email</button>  </a>
+        </div>
+               
+    </main>
+    <footer>
+        <div>
+           <a href="https://github.com/andres-shady"> <img src="github.jpg" alt="photo d'un icone github"></a><br>
+           <small>dernier mise a jour le 30 decembre 2023 </small>
+        </div>
+      
+       
+    </footer>
+</div>
+<script>
+    const { createApp } = Vue
+  
+    createApp({
+      data() {
+        return{
+            message: 'BIENVENUE',
+          titre1: 'Je me presente',
+          titre2: 'Bon passons au chose serieuse',
+          introduction:"Voici quelque projet que j'ai fait ",
+          titreProjet1:" Projet de CV",
+          titreProjet2:"Projet de CAHIER DE CHARGE",
+        }
+         
+              }
+           }
+      
+    ).mount('#app')
+  </script>
+
+</body>
+</html>
